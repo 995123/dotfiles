@@ -280,7 +280,7 @@ alias h='cd ~'
 alias p='cd ..'
 alias c='doas chmod 777'
 alias d='doas'
-/opt/shell-color-scripts/colorscripts/colorscript.sh -r 
+/home/omar/github/shell-color-scripts/colorscript.sh -r 
 #eval "$(starship init bash)"
 alias pmi='doas pacman -S'
 alias pmu='doas pacman -Syyu'
@@ -336,8 +336,8 @@ alias gn='cd ~/.config/nnn'
 alias tl='trash-list' 
 alias tr='trash-restore'
 #alias rm='trash-put'
-alias td='cd ~/.local/share/Trash/files'
-alias te='trash-empty'
+alias gt='cd ~/.local/share/Trash/files'
+alias et='trash-empty'
 alias rk='pulseaudio -k; pulseaudio --start'
 alias pulse='doas nvim /etc/pulse/default.pa'
 alias gs='cd ~/scripts'
@@ -376,6 +376,7 @@ alias gsh='~/scripts/gsh'
 alias size='gdu'
 alias gm='cd /media'
 alias yts='~/scripts/yts'
+alias sdn="~/scripts/speedtest"
 #search pkg with packman and install it 
 function pmsi
     pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro doas pacman -S

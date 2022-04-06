@@ -84,6 +84,9 @@ super + shift + s
 #mpv youtube 
 super + p 
  mpv $(xclip -o)
+#pavucontrol 
+super + shift + p 
+    pavucontrol
 #sxiv via dmenu  
 #super + shift + p 
 #    ~/scripts/dmenu_sxiv
@@ -151,7 +154,10 @@ super + shift + w
     whatsapp-nativefier
 #creat vim file 
 super + shift + v 
-    kitty -e nvim
+    kitty -e doas nvim
 #any disk 
 super + shift + a 
     anydesk
+#dmenufm 
+#super + shift + q 
+#     dmenufm 
